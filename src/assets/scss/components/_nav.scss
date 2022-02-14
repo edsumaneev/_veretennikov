@@ -1,4 +1,7 @@
 .nav {
+  z-index: 10;
+  position: absolute;
+  top: 0;
   display: flex;
   align-items: center;
 
@@ -60,8 +63,23 @@
   }
 }
 
+.nav__item--logo {
+  width: 127px;
+  height: 43px;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
 .nav.active .nav__item {
   width: 100%;
+}
+
+.nav.active .nav__item--logo {
+  width: auto;
+  padding: 0;
 }
 
 .button__mobmenu {
