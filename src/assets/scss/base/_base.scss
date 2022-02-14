@@ -1,0 +1,107 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  min-width: 320px;
+}
+
+// body.is-modal {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
+
+// .container {
+//   max-width: $width-workspace;
+// }
+
+a {
+  color: #282b3a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #532ef8;
+}
+
+*:hover {
+  transition: all ease-in-out 0.4s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+// container
+.wrapper,
+section,
+header,
+footer {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+
+  .wrapper,
+  section,
+  header,
+  footer {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+
+  .wrapper,
+  section,
+  header,
+  footer {
+    padding: 0 calc(50vw - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+
+  .wrapper,
+  section,
+  header,
+  footer {
+    padding: 0 calc(50vw - 480px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+
+  .wrapper,
+  section,
+  header,
+  footer {
+    padding: 0 calc(50vw - 590px);
+  }
+}
