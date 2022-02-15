@@ -1,8 +1,6 @@
 // intro
 .intro {
-  position: relative;
-
-  height: 1000px;
+  padding-bottom: 100px;
 
   background: url("../img/bg/bg-intro-01.webp") no-repeat top;
   background-color: #18273f;
@@ -18,14 +16,16 @@
 }
 
 .intro__img {
+  z-index: 0;
   position: absolute;
   top: -371px;
-  left: 103px;
+  left: -190px;
   width: 100%;
   height: 100%;
 }
 
 .intro__inner {
+  z-index: 5;
   flex-basis: 48%;
 }
 
@@ -34,8 +34,9 @@
   justify-content: center;
   align-items: center;
 
+  margin-top: -80px;
+
   flex-basis: 26%;
-  // margin-left: auto;
 
   text-align: center;
 
@@ -57,6 +58,49 @@
   width: 260px;
 }
 
+.intro__list {
+  position: relative;
+  z-index: 5;
+  display: flex;
+
+  padding: 52px 0 64px 39px;
+
+  background: #f4efe3;
+  box-shadow: 0 4px 120px rgba(160, 148, 114, 0.25);
+  border-radius: 6px;
+}
+
+.intro__title {
+  position: relative;
+  color: #d1baae;
+  font-weight: 500;
+  font-size: rem(48px);
+  line-height: 30px;
+}
+
+.intro__title::after {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  top: 19px;
+  left: 36px;
+
+  background: url("../img/bg/bg-intro-02.webp") no-repeat 50% 50%;
+}
+
+.intro__paragraph {
+  padding-left: 95px;
+  padding-right: 30px;
+  margin-top: -5px;
+}
+
+.intro__paragraph span {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
 // END intro
 
 // vid
@@ -65,14 +109,44 @@
 
   height: 1000px;
 
+  text-align: center;
+
   background: url("../img/bg/bg-vid-01.webp") no-repeat top;
   background-color: #18273f;
 }
 
-// .vid__img {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-// }
+.vid__title {
+  padding: 0 145px;
+  text-align: center;
+}
+
+.vid__wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* для 16:9 (если 4:3 — то 75%) */
+  margin: 0 auto;
+  width: 1164px;
+  overflow: hidden;
+  background: url("../img/bg/vid-border.webp") no-repeat 50% 50%;
+}
+
+.vid__wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 555px;
+  border-width: 0;
+  outline-width: 0;
+
+  border-radius: 30px;
+}
+
+.vid__poster {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 // END vid

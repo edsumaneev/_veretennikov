@@ -1,10 +1,11 @@
 {% set title = "Front Page" %}
 {% include "../templates/header.njk" %}
+<div id="overlay"></div>
 <header class="header">
   <nav class="nav wrapper">
     <div class="nav__inner">
       <div class="nav__item nav__item--logo">
-        <img src="assets/img/bg/logo-white.png" alt="Albert Veretennikov" width="517" height="128">
+        <img src="assets/img/bg/logo-white.webp" alt="Albert Veretennikov" width="517" height="128">
       </div>
       <a class="nav__item" href="#">Об эксперте</a>
       <a class="nav__item" href="#">Приемущества</a>
@@ -69,14 +70,14 @@
   </div>
 </header>
 <section class="intro wrapper">
-  <div class="intro__img">
-    <img src="assets/img/bg/bg-intro-03.webp" alt="Albert Veretennikov" width="1981" height="1981">
-  </div>
   <div class="intro__wrapper">
     <div class="intro__inner">
       <h1 class="title title--main">Альберт Веретенников</h1>
       <p class="subtitle subtitle--main">Эксперт по масштабированию бизнеса на международные рынки</p>
-      <button>записаться на консультацию</button>
+      <button class="button">записаться на консультацию</button>
+    </div>
+    <div class="intro__img">
+      <img src="assets/img/bg/bg-intro-03.webp" alt="Albert Veretennikov" width="1981" height="1981">
     </div>
     <div class="intro__blockquote">
       <p>
@@ -85,34 +86,39 @@
       </p>
     </div>
   </div>
-  <ul>
-    <li>
-      <h2>01</h2>
-      <p>
-        <span>Максимально быстро и точно протестирую Ваш бизнес.</span>
+  <ul class="intro__list">
+    <li class="intro__item">
+      <h2 class="intro__title">01</h2>
+      <p class="intro__paragraph">
+        <span>Максимально быстро и точно протестирую Ваш бизнес.</span><br>
         По результатам экспертной оценки дам конкретные рекомендации: что доработать или исправить, и другие важнейшие
         детали под каждую конкретную задачу.
       </p>
     </li>
-    <li>
-      <h2>02</h2>
-      <p>
+    <li class="intro__item">
+      <h2 class="intro__title">02</h2>
+      <p class="intro__paragraph">
         <span>Такой подход гарантированно защищает от потери миллионов рублей, времени, личных ресурсов из-за
           неподготовленного и непродуманного старта!</span>
       </p>
     </li>
   </ul>
 </section>
-<section class="vid">
-  <h2>Посмотрите видео, и вы узнаете какие ошибки совершают 95% начинающих экспортёров</h2>
-  <!-- <div class="vid__img">
-    <img src="assets/img/bg/bg-vid-01.webp" alt="Albert Veretennikov" width="1920" height="971">
-  </div> -->
+<section class="vid wrapper">
+  <h2 class="title vid__title">Посмотрите видео, и вы узнаете какие <span>ошибки совершают 95% начинающих
+      экспортёров</span></h2>
+  <div class="vid__wrap">
+    <img class="vid__poster" src="assets/img/bg/vid-poster.webp" alt="" width="1164" height="555">
+    <iframe width="1164" height="555" src="https://www.youtube.com/embed/LnmJUTPIQig" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <button class="button">записаться на консультацию</button>
 </section>
 
 
 
-<!-- <div class="popup__bg wrapper">
+<div class="popup__bg wrapper">
   <form class="popup">
     <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path fill="#2982ff"
@@ -138,12 +144,12 @@
     </div>
     <button class="btn-send" type="submit">Отправить</button>
   </form>
-</div> -->
+</div>
 
-<!-- <div style="height: 30px;"></div>
+<div style="height: 30px;"></div>
 
 <button class="popup-btn wrapper">Открыть попап</button>
 
-<div style="height: 30px;"></div> -->
+<div style="height: 30px;"></div>
 
 {% include "../templates/footer.njk" %}

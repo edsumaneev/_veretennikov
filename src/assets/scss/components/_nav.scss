@@ -48,6 +48,16 @@
   animation: show 0.5s 1;
 }
 
+@keyframes show {
+  0% {
+    top: -250%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
 .nav__item {
   margin-right: 37px;
 
