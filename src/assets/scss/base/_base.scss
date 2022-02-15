@@ -25,10 +25,7 @@ a {
 
 a:hover {
   color: #bc9e5f;
-}
-
-*:hover {
-  transition: all ease-in-out 0.4s;
+  transition: all ease 0.3s;
 }
 
 *,
@@ -60,8 +57,6 @@ p {
 
 // container
 .wrapper,
-// section,
-header,
 footer {
   padding: 0 15px;
 }
@@ -69,8 +64,6 @@ footer {
 @media (min-width: 575.98px) {
 
   .wrapper,
-  // section,
-  header,
   footer {
     padding: 0 calc(50vw - 270px);
   }
@@ -79,8 +72,6 @@ footer {
 @media (min-width: 767.98px) {
 
   .wrapper,
-  // section,
-  header,
   footer {
     padding: 0 calc(50vw - 360px);
   }
@@ -89,8 +80,6 @@ footer {
 @media (min-width: 991.98px) {
 
   .wrapper,
-  // section,
-  header,
   footer {
     padding: 0 calc(50vw - 480px);
   }
@@ -99,9 +88,7 @@ footer {
 @media (min-width: 1339.98px) {
 
   .wrapper,
-  // section,
-  header,
   footer {
-    padding: 0 calc(50vw - 660px);
+    padding: 0 calc(50vw - 667px);
   }
 }

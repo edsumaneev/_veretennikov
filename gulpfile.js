@@ -26,7 +26,7 @@ const del = require('del');
 const browsersync = require("browser-sync").create();
 const htmlValidator = require('gulp-w3c-html-validator');
 const notify = require("gulp-notify");
-// const webp = require('gulp-webp');
+const webp = require('gulp-webp');
 const sourcemaps = require('gulp-sourcemaps');
 const browserify = require("browserify");
 const source = require('vinyl-source-stream');
@@ -126,7 +126,7 @@ gulp.task('images', done => {
                 }]
             })
         ]))
-        // .pipe(webp())
+        .pipe(webp())
         .pipe(gulp.dest(outputDir + 'assets/img/'))
     done();
 });
