@@ -1,4 +1,5 @@
 require('./js-component/popup-simple');
+require('slick-carousel');
 
 $('.hamburger').on('click', function (event) {
   event.preventDefault();
@@ -36,4 +37,16 @@ $(document).ready(function () {
     $('.vid__text').toggleClass('played');
     $('.vid__playbtn').toggleClass('played');
   });
+});
+// 
+$(".slider").slick({
+  slidesToShow: 1,
+  infinite: true,
+  autoplay: false,
+  touchThreshold: 100,
+  dots: false,
+  fade: true,
+  speed: 800,
+  prevArrow: $(".response__prev"),
+  nextArrow: $(".response__next")
 });

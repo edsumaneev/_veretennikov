@@ -1,0 +1,40 @@
+.slider {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.slider::before {
+  z-index: 5;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  content: "";
+  width: 93px;
+  height: 83px;
+  background: url("../img/bg/bg-blockquote.webp") no-repeat 50% 50%;
+}
+
+.slider__slide {
+  padding: 43px 99px 88px 99px;
+  margin: 0 auto;
+  margin-bottom: 158px;
+
+  color: #000000;
+  font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 36px;
+  text-align: center;
+
+  box-shadow: inset 0 0 40px rgba(43, 87, 154, 0.15), 0 10px 0 #6a778a, 0 20px 0 #475366;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.slider__img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

@@ -376,7 +376,8 @@
 // END advantages 
 // response
 .response {
-  padding-top: 130px;
+  position: relative;
+  padding: 130px 450px;
   background: url("../img/bg/bg-response-01.webp") no-repeat top;
   background-color: #18273f;
 }
@@ -390,6 +391,52 @@
   text-align: center;
 
   color: #FFFFFF;
+}
+
+.response__subtitle {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.response__prev,
+.response__next {
+  position: absolute;
+  top: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  svg {
+    stroke: #debb6b;
+  }
+}
+
+.response__prev {
+  left: 345px;
+}
+
+.response__next {
+  right: 345px;
+}
+
+.response__prev:hover,
+.response__next:hover {
+  cursor: pointer;
+  background: linear-gradient(127.51deg, #ffda78 2.72%, #c6a461 89.14%);
+
+  svg {
+    stroke: #ffffff;
+  }
 }
 
 // END response
