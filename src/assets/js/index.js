@@ -26,3 +26,14 @@ $(document).keydown(function (eveent) {
   }
 });
 // 
+$(document).ready(function () {
+  var vidvideo = document.getElementById("vid__video");
+  var vidvideo = vidvideo.getElementsByTagName("iframe")[0].contentWindow;
+  $("#play_video").on("click", function () {
+
+    vidvideo.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
+    $('.vid__poster').toggleClass('played');
+    $('.vid__text').toggleClass('played');
+    $('.vid__playbtn').toggleClass('played');
+  });
+});
