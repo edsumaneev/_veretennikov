@@ -377,7 +377,8 @@
 // response
 .response {
   position: relative;
-  padding: 130px 450px;
+  padding: 130px 0 0;
+  margin-top: -7px;
   background: url("../img/bg/bg-response-01.webp") no-repeat top;
   background-color: #18273f;
 }
@@ -394,6 +395,8 @@
 }
 
 .response__subtitle {
+  padding: 0 315px;
+  margin-bottom: 37px;
   color: #ffffff;
   font-weight: 500;
   font-size: rem(24px);
@@ -405,7 +408,7 @@
 .response__prev,
 .response__next {
   position: absolute;
-  top: 36%;
+  top: 365px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,4 +442,71 @@
   }
 }
 
+.response__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.response__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 25px 57px 25px 97px;
+  margin-bottom: 20px;
+  max-width: 650px;
+  min-height: 156px;
+
+  background: #f4efe4;
+  border-radius: 10px;
+}
+
+.response__paragraph {
+  span {
+    font-weight: 600;
+  }
+}
+
+.response__decor {
+  position: absolute;
+  left: 0;
+}
+
+.response__col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.response__col--marg {
+  margin-right: 0;
+}
+
 // END response
+// prices
+
+.prices__title {
+  padding: 0 220px;
+  margin-bottom: 36px;
+  color: #ffffff;
+  font-size: rem(36px);
+  line-height: 48px;
+
+  text-align: center;
+}
+
+.prices__subtitle {
+  padding: 0 290px;
+  margin-bottom: 50px;
+
+  color: #ffffff;
+  font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: 30px;
+  text-align: center;
+}
+
+// END prices 

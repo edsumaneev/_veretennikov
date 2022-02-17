@@ -1,4 +1,4 @@
-let popupBg = document.querySelector('.popup__bg');
+let popupBg = document.querySelector('.bg-popup');
 let popup = document.querySelector('.popup');
 let openPopupButtons = document.querySelectorAll('.button--consult');
 let closePopupButton = document.querySelector('.close-popup');
