@@ -21,16 +21,34 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 71px 250px 81px 250px;
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
-  width: 400px;
-  padding: 25px;
+  // width: 400px;
   transition: 0.5s all;
+
+  border-radius: 20px;
 }
 
 .popup.active {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
+}
+
+.popup__header {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.popup__logo {
+  margin-bottom: 48px;
+}
+
+.popup__title {
+  margin-bottom: 25px;
+  color: #000000;
+  font-weight: 500;
 }
 
 // 
@@ -57,11 +75,28 @@
 }
 
 .popup input {
+  padding: 15px 0 15px 45px;
+
   height: 45px;
+  width: 100%;
   font-size: 18px;
   border: none;
+  border-bottom: 2px solid #e4dfd5;
+
   outline: none;
-  border-bottom: 1px solid #cfd0d3;
+}
+
+.popup__row {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.popup__icon {
+  position: absolute;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
 .popup input:focus {
@@ -72,21 +107,14 @@
   color: #2982ff;
 }
 
-.btn-send,
-.popup-btn {
-  width: 100%;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 18px;
-  border: 2px solid #2982ff;
-  background: #2982ff;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s all;
+.popup input::placeholder {
+  // padding-left: 45px;
+  color: #9a9a9a;
+  line-height: 55px;
+}
+
+.popup button {
+  margin-bottom: 10px;
 }
 
 .popup-btn {

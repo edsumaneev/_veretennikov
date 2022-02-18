@@ -50,3 +50,13 @@ $(".slider").slick({
   prevArrow: $(".response__prev"),
   nextArrow: $(".response__next")
 });
+// 
+$(function () {
+  $("a[href^='#adv'], a[href^='#response'], a[href^='#prices'], a[href^='#tests']").click(function () {
+    var _href = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + "px"
+    });
+    return false;
+  });
+});
