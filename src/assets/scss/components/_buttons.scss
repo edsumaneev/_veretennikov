@@ -1,5 +1,7 @@
 .button {
+  display: block;
   padding: 18px 25px;
+  max-width: 310px;
   color: #545454;
   font-family: "TTHoves", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -13,6 +15,10 @@
   border-radius: 10px;
   border-color: transparent;
   background: linear-gradient(130.42deg, #efd182 2.82%, #ffecc1 52.08%, #e4c689 94.09%);
+}
+
+.button--center {
+  margin: 0 auto;
 }
 
 .button:hover {

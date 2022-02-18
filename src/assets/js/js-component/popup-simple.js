@@ -1,6 +1,6 @@
 let popupBg = document.querySelector('.bg-popup');
 let popup = document.querySelector('.popup');
-let openPopupButtons = document.querySelectorAll('.button--consult');
+let openPopupButtons = document.querySelectorAll('.button--price');
 let closePopupButton = document.querySelector('.close-popup');
 
 openPopupButtons.forEach((button) => {
