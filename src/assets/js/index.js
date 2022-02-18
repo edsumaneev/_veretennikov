@@ -60,3 +60,11 @@ $(function () {
     return false;
   });
 });
+// 
+$("#agreement, #agreement-test").click(function () {
+  if (($(this).prop("checked"))) {
+    $(".button--send").removeAttr("disabled").removeClass("disabled");
+  } else {
+    $(".button--send").attr("disabled", "disabled").addClass("disabled");
+  }
+});

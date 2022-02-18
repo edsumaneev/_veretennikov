@@ -17,6 +17,10 @@
   background: linear-gradient(130.42deg, #efd182 2.82%, #ffecc1 52.08%, #e4c689 94.09%);
 }
 
+.button:focus-visible {
+  outline: none;
+}
+
 .button--center {
   margin: 0 auto;
 }
@@ -29,4 +33,9 @@
 
 .button--send {
   width: 100%;
+}
+
+.button--send.disabled {
+  opacity: 0.5;
+  cursor: auto;
 }

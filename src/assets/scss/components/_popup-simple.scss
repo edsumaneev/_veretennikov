@@ -17,6 +17,7 @@
   transition: 0.5s all;
 }
 
+.popup-test,
 .popup {
   position: absolute;
   top: 50%;
@@ -30,7 +31,8 @@
   border-radius: 20px;
 }
 
-.popup.active {
+.popup.active,
+.popup-test.active {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
 }
@@ -52,6 +54,7 @@
 }
 
 // 
+.close-btn,
 .close-popup {
   position: absolute;
   top: 30px;
@@ -59,6 +62,7 @@
   cursor: pointer;
 }
 
+.close-btn:hover,
 .close-popup:hover {
   transform: rotate(270deg);
   transition: ease-in-out 0.8s;
@@ -130,3 +134,57 @@
   color: #2982ff;
   transition: 0.5s all;
 }
+
+// 
+.popup__agreement {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #a3a3a3;
+}
+
+.popup__link {
+  color: #ad9373;
+  text-decoration: underline;
+}
+
+.popup__link:hover {
+  color: rgba($color: #ffaabf, $alpha: 1.0);
+}
+
+.popup__agreement:hover {
+  cursor: pointer;
+}
+
+.popup__agreement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+
+  background-color: transparent;
+  border: 1px solid #c9ae8f;
+}
+
+.popup input[type="checkbox"],
+.popup-test input[type="checkbox"] {
+  display: none;
+}
+
+.popup input[type="checkbox"]:checked+label::before,
+.popup-test input[type="checkbox"]:checked+label::before {
+  background: url("../img/icons/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 60% 70%;
+  background-size: 90%;
+}
+
+// 
