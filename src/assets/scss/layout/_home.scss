@@ -44,7 +44,6 @@
 
   color: #ffffff;
   font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
-  font-style: italic;
   font-weight: 500;
   font-size: rem(18px);
   line-height: 30px;
@@ -327,7 +326,6 @@
   margin-bottom: 50px;
 
   font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
-  font-style: italic;
   font-weight: 500;
   font-size: rem(18px);
   line-height: 30px;
@@ -433,10 +431,18 @@
 
 .response__prev {
   left: 345px;
+
+  @media screen and (max-width:1880px) {
+    left: 255px;
+  }
 }
 
 .response__next {
   right: 345px;
+
+  @media screen and (max-width:1880px) {
+    right: 255px;
+  }
 }
 
 .response__prev:hover,
@@ -469,6 +475,21 @@
 
   background: #f4efe4;
   border-radius: 10px;
+}
+
+.response__num {
+  display: block;
+  position: absolute;
+  bottom: 42px;
+  right: 0;
+
+  color: #ffffff;
+  font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: rem(144px);
+  // line-height: 26px;
+
+  opacity: 0.8;
 }
 
 .response__paragraph {

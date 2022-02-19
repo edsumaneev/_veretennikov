@@ -1,5 +1,11 @@
 .header {
-  position: relative;
+  z-index: 15;
+  position: fixed;
+  padding-top: 16px;
+  width: 100%;
+
+  background: url("../img/bg/bg-header-01.webp") top center;
+  background-color: #18273f;
 }
 
 .header__wrapper {
