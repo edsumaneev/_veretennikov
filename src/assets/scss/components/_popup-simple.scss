@@ -40,6 +40,14 @@
   }
 }
 
+.popup-advice,
+.popup-thanks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
 .popup-test {
   padding: 71px 130px 81px 130px;
 }
@@ -54,6 +62,12 @@
 
 .popup.active {
   max-width: 1000px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.popup-advice.active,
+.popup-thanks.active {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
 }
@@ -73,6 +87,10 @@
 
 .bg-popup__logo {
   margin-bottom: 48px;
+}
+
+.bg-popup__logo--advice {
+  margin-bottom: 30px;
 }
 
 .bg-popup__title {
@@ -315,3 +333,105 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+// popup-thanks
+.popup-thanks {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 465px;
+  max-width: 590px;
+
+  border-radius: 20px;
+
+  background: url("../img/bg/bg-popup-thanks.webp") no-repeat;
+  background-position: bottom;
+  background-color: #ffffff;
+}
+
+.popup-thanks::before {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 54px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -700px;
+  bottom: 0;
+  border-radius: 50%;
+  background: url("../img/bg/bg-advantages-yes.webp") no-repeat 50% 50%;
+}
+
+.popup-thanks__title {
+  margin-bottom: 30px;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+}
+
+.popup-thanks__text {
+  padding: 0 70px;
+  color: #000000;
+  font-family: "BerlingskeSerif", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 36px;
+
+  text-align: center;
+}
+
+// END popup-thanks
+
+// popup-advice
+.popup-advice {
+  padding: 50px 70px 400px 70px;
+  max-width: 600px;
+
+  background: url("../img/bg/bg-popup-advice.webp") no-repeat bottom;
+  background-color: #18273f;
+}
+
+.bg-popup__logo--advice {
+  text-align: center;
+}
+
+.popup-advice__title {
+  margin: 35px auto;
+  font-weight: 500;
+  font-size: rem(36px);
+  line-height: 55px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #e7cd95;
+}
+
+.popup-advice__result {
+  color: #45d053;
+  font-weight: 600;
+  font-size: rem(20px);
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.popup-advice__result--red {
+  color: #ff8686;
+}
+
+.popup-advice__text {
+  margin: 22px 0 42px 0;
+  color: #ffffff;
+  font-size: rem(18px);
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.popup-advice__bnt {
+  margin: 0 auto;
+}
+
+// END popup-advice
