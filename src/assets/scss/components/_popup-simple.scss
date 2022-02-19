@@ -384,8 +384,9 @@
 
 // popup-advice
 .popup-advice {
-  padding: 50px 70px 400px 70px;
+  padding: 50px 70px 0 70px;
   max-width: 600px;
+  min-height: 100%;
 
   background: url("../img/bg/bg-popup-advice.webp") no-repeat bottom;
   background-color: #18273f;
@@ -409,7 +410,6 @@
 }
 
 .popup-advice__result {
-  color: #45d053;
   font-weight: 600;
   font-size: rem(20px);
   line-height: 30px;
@@ -419,6 +419,14 @@
 
 .popup-advice__result--red {
   color: #ff8686;
+}
+
+.popup-advice__result--yellow {
+  color: #f2ce50;
+}
+
+.popup-advice__result--green {
+  color: #45d053;
 }
 
 .popup-advice__text {
