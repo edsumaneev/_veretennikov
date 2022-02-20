@@ -8,6 +8,10 @@
     font-size: rem(32px);
     line-height: 120%;
   }
+
+  @media screen and (max-width:575px) {
+    font-size: rem(28px);
+  }
 }
 
 .title--500 {
@@ -17,6 +21,10 @@
 .title span {
   color: #e9ce95;
   font-weight: 600;
+
+  @media screen and (max-width:575px) {
+    font-size: rem(28px);
+  }
 }
 
 .title--main {

@@ -23,12 +23,10 @@
 .popup {
   position: absolute;
   top: 50%;
-  // top: 45%;
   left: 50%;
   padding: 71px 250px 81px 250px;
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
-  // width: 400px;
   transition: 0.5s all;
 
   border-radius: 20px;
@@ -37,6 +35,10 @@
 
   @media screen and (max-width:1880px) {
     padding: 50px 150px 50px 150px;
+  }
+
+  @media screen and (max-width:575px) {
+    padding: 10px 15px 10px 15px;
   }
 }
 
@@ -89,6 +91,10 @@
   @media screen and (max-width:1449px) {
     width: 100%;
   }
+
+  @media screen and (max-width:575px) {
+    padding: 10px 15px 10px 55px;
+  }
 }
 
 .bg-popup__header {
@@ -99,10 +105,19 @@
 
 .bg-popup__logo {
   margin-bottom: 48px;
+
+  @media screen and (max-width:575px) {
+    margin-bottom: 10px;
+    transform: scale(0.8);
+  }
 }
 
 .bg-popup__logo--advice {
   margin-bottom: 30px;
+
+  @media screen and (max-width:575px) {
+    margin-bottom: 10px;
+  }
 }
 
 .bg-popup__title {
@@ -110,6 +125,10 @@
   color: #000000;
   font-weight: 500;
   text-align: center;
+
+  @media screen and (max-width:575px) {
+    margin-bottom: 15px;
+  }
 }
 
 // 
@@ -119,6 +138,11 @@
   top: 30px;
   right: 30px;
   cursor: pointer;
+
+  @media screen and (max-width:575px) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .close-btn:hover,
@@ -257,6 +281,13 @@
   background: url("../img/icons/icon-input-radio.svg");
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media screen and (max-width:575px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: contain;
+  }
 }
 
 .popup-test__radio:not(:disabled):not(:checked)+label:hover::before {
@@ -289,11 +320,21 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
+
+  @media screen and (max-width:575px) {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
 }
 
 .popup-test__radio {
   margin-right: 20px;
   width: 54px;
+
+  @media screen and (max-width:575px) {
+    width: 20px;
+  }
 }
 
 .popup-test__inner {
@@ -305,6 +346,11 @@
   margin-right: 30px;
   margin-bottom: 35px;
   max-width: 290px;
+
+  @media screen and (max-width:575px) {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 .popup-test__block label {
@@ -319,6 +365,11 @@
 .popup-test__list {
   margin-bottom: 130px;
   margin-right: -100px;
+
+  @media screen and (max-width:575px) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 .popup-test__item::before {
@@ -329,6 +380,12 @@
   height: 83px;
 
   background: url("../img/bg/bg-test-01.webp") no-repeat 50% 50%;
+
+  @media screen and (max-width:575px) {
+    width: 50px;
+    height: 43px;
+    background-size: contain;
+  }
 }
 
 .popup-test__num {
@@ -339,6 +396,13 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 64px;
+
+  @media screen and (max-width:575px) {
+    left: 10px;
+    margin-top: 7px;
+    font-size: 24px;
+    line-height: 100%;
+  }
 }
 
 .popup-test__inner {
@@ -358,6 +422,12 @@
   background: url("../img/bg/bg-popup-thanks.webp") no-repeat;
   background-position: bottom;
   background-color: #ffffff;
+
+  @media screen and (max-width:575px) {
+    padding-top: 50px;
+    padding-bottom: 365px;
+    max-width: 100%;
+  }
 }
 
 .popup-thanks::before {
@@ -372,6 +442,12 @@
   bottom: 0;
   border-radius: 50%;
   background: url("../img/bg/bg-advantages-yes.webp") no-repeat 50% 50%;
+
+  @media screen and (max-width:575px) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
 }
 
 .popup-thanks__title {
@@ -390,6 +466,12 @@
   line-height: 36px;
 
   text-align: center;
+
+  @media screen and (max-width:575px) {
+    padding: 0 15px;
+    font-size: rem(18px);
+    line-height: 130%;
+  }
 }
 
 // END popup-thanks
@@ -402,6 +484,10 @@
 
   background: url("../img/bg/bg-popup-advice.webp") no-repeat bottom;
   background-color: #18273f;
+
+  @media screen and (max-width:575px) {
+    padding: 30px 15px 0 15px;
+  }
 }
 
 .bg-popup__logo--advice {
@@ -419,6 +505,12 @@
   text-transform: uppercase;
 
   color: #e7cd95;
+
+  @media screen and (max-width:575px) {
+    margin: 15px auto;
+    font-size: rem(24px);
+    line-height: 130%;
+  }
 }
 
 .popup-advice__result {
