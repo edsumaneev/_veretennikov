@@ -64,12 +64,20 @@
   max-width: 1000px;
   transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
+
+  @media screen and (max-width:1449px) {
+    width: 100%;
+  }
 }
 
 .popup-advice.active,
 .popup-thanks.active {
   transform: translate(-50%, -50%) scale(1);
   transition: 0.5s all;
+
+  @media screen and (max-width:1449px) {
+    width: 100%;
+  }
 }
 
 .popup-test.active {
@@ -77,6 +85,10 @@
   transform: translateX(-50%);
   top: auto;
   transition: 0.5s all;
+
+  @media screen and (max-width:1449px) {
+    width: 100%;
+  }
 }
 
 .bg-popup__header {
@@ -179,8 +191,8 @@
   position: relative;
   display: block;
   padding-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 
   font-size: 12px;
   line-height: 16px;

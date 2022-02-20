@@ -31,6 +31,10 @@
 
   border-bottom: 1px solid #caa795;
 
+  @media screen and (max-width:1449px) {
+    flex-wrap: wrap;
+  }
+
   @media(max-width: $width-lg) {
     flex-direction: column;
   }
@@ -65,9 +69,12 @@
   font-size: rem(16px);
   line-height: 19px;
 
+  @media screen and (max-width:1449px) {
+    margin-right: 0;
+  }
+
   @media(max-width: $width-lg) {
     padding: 15px 0;
-    margin-right: 0;
     font-size: rem(18px);
   }
 }

@@ -6,6 +6,10 @@
   @media screen and (max-width:1880px) {
     padding: 0 350px;
   }
+
+  @media screen and (max-width:1449px) {
+    padding: 0 285px;
+  }
 }
 
 .slider::before {
@@ -19,6 +23,10 @@
   width: 93px;
   height: 83px;
   background: url("../img/bg/bg-blockquote.webp") no-repeat 50% 50%;
+
+  @media screen and (max-width:1449px) {
+    bottom: 30px;
+  }
 }
 
 .slider__slide {
@@ -36,12 +44,21 @@
   box-shadow: inset 0 0 40px rgba(43, 87, 154, 0.15), 0 10px 0 #6a778a, 0 20px 0 #475366;
   border-radius: 20px;
   background-color: #ffffff;
+
+  @media screen and (max-width:1449px) {
+    padding: 30px 50px 50px 50px;
+    margin-bottom: 80px;
+  }
 }
 
 .slider__img {
   margin: 0 auto;
   margin-bottom: 30px;
   object-fit: contain;
+
+  @media screen and (max-width:1449px) {
+    margin-bottom: 20px;
+  }
 }
 
 .slider__author {
