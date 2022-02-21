@@ -29,7 +29,7 @@
 
   @media screen and (max-width:992px) {
     padding-top: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 100%;
     align-items: center;
   }
@@ -45,12 +45,38 @@
 
   @media screen and (max-width:1449px) {
     left: 185px;
-    top: 142px;
+    top: 171px;
     height: auto;
   }
 
   @media screen and (max-width:992px) {
-    display: none;
+    left: 70px;
+    top: 90px;
+    height: auto;
+    transform: scale(0.7);
+  }
+
+  @media screen and (max-width:767px) {
+    left: -7px;
+    top: 58px;
+    height: auto;
+    transform: scale(0.55);
+  }
+
+  @media screen and (max-width:575px) {
+    left: -92px;
+    top: 295px;
+    transform: scale(0.45);
+  }
+
+  @media screen and (max-width:469px) {
+    left: -112px;
+    top: 350px;
+  }
+
+  @media screen and (max-width:377px) {
+    left: -139px;
+    top: 373px;
   }
 }
 
@@ -65,6 +91,22 @@
   @media screen and (max-width:992px) {
     text-align: center;
     width: 100%;
+  }
+}
+
+.intro__btn {
+  @media screen and (max-width:1449px) {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+
+  @media screen and (max-width:992px) {
+    left: 0;
+  }
+
+  @media screen and (max-width:575px) {
+    right: 0;
   }
 }
 
@@ -93,22 +135,40 @@
 
   @media screen and (max-width:1449px) {
     padding: 110px 0;
-    margin-top: 20px;
+    margin-top: 0;
     flex-basis: unset;
     max-width: 345px;
+    background-size: contain;
+    margin-bottom: 85px;
   }
 
   @media screen and (max-width:992px) {
+    align-self: baseline;
+    padding: 120px 0;
+    width: 277px;
     max-width: unset;
-    width: 100%;
+  }
+
+  @media screen and (max-width:767px) {
+    padding: 50px 0;
+  }
+
+  @media screen and (max-width:575px) {
+    margin-bottom: 385px;
+    align-self: center;
   }
 }
 
 .intro__blockquote p {
-  width: 260px;
-  // @media screen and (max-width:1449px) {
-  //   width: auto;
-  // }
+  width: 250px;
+
+  @media screen and (max-width:992px) {
+    font-size: rem(14px);
+  }
+
+  @media screen and (max-width:767px) {
+    width: 200px;
+  }
 }
 
 .intro__list {
@@ -901,7 +961,7 @@
   }
 
   @media screen and (max-width:575px) {
-    font-size: rem(16px);
+    font-size: rem(14px);
     line-height: 150%;
   }
 }
@@ -1047,13 +1107,11 @@
     padding: 0 0 45px;
   }
 
-  @media screen and (max-width:992px) {
+  @media screen and (max-width:1250px) {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 0 0 110px 0;
   }
-
-  @media screen and (max-width:575px) {}
 }
 
 .overall__item {
@@ -1138,6 +1196,10 @@
   @media screen and (max-width:992px) {
     font-size: rem(18px);
     padding: 0;
+  }
+
+  @media screen and (max-width:575px) {
+    font-size: rem(14px);
   }
 }
 

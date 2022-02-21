@@ -25,6 +25,11 @@
   }
 }
 
+.button--blue {
+  color: #ffffff;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(170, 224, 255, 0.2) 0%, rgba(86, 184, 255, 0.2) 100%), linear-gradient(127.51deg, #88c3fa 2.72%, #4688d5 48.06%, #5a97f1 89.14%);
+}
+
 .button:focus-visible {
   outline: none;
 }

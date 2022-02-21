@@ -55,7 +55,7 @@ $(function () {
   $("a[href^='#adv'], a[href^='#response'], a[href^='#prices'], a[href^='#tests']").click(function () {
     var _href = $(this).attr("href");
     $("html, body").animate({
-      scrollTop: $(_href).offset().top + "px"
+      scrollTop: $(_href).offset().top - 108 + "px"
     });
     return false;
   });
