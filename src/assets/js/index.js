@@ -10,7 +10,7 @@ $('.hamburger').on('click', function (event) {
 });
 
 $('#overlay, .nav__item').on('click', function (event) {
-  if ($(window).innerWidth() < 992) {
+  if ($(window).innerWidth() < 1198) {
     $('.hamburger').removeClass('active');
     $('.nav').removeClass('active');
     $('body').removeClass('is-modal');
@@ -18,7 +18,7 @@ $('#overlay, .nav__item').on('click', function (event) {
   }
 });
 
-$(document).keydown(function (eveent) {
+$(document).keydown(function (event) {
   if (event.keyCode == 27) {
     $('.hamburger').removeClass('active');
     $('.nav').removeClass('active');
@@ -55,7 +55,7 @@ $(function () {
   $("a[href^='#adv'], a[href^='#response'], a[href^='#prices'], a[href^='#tests']").click(function () {
     var _href = $(this).attr("href");
     $("html, body").animate({
-      scrollTop: $(_href).offset().top - 108 + "px"
+      scrollTop: $(_href).offset().top - 72 + "px"
     });
     return false;
   });

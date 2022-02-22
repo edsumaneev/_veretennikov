@@ -109,10 +109,21 @@ footer {
   }
 }
 
+// @media (min-width: 992.98px) {
+@media (min-width: 1198.98px) {
+
+  .wrapper,
+  footer {
+    // padding: 0 calc(50vw - 480px);
+    padding: 0 calc(50vw - 600px);
+  }
+}
+
 @media (min-width: 1449.98px) {
 
   .wrapper,
   footer {
-    padding: 0 calc(50vw - 667px);
+    // padding: 0 calc(50vw - 667px);
+    padding: 0 calc(50vw - 725px);
   }
 }
