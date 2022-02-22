@@ -52,7 +52,7 @@ $(".slider").slick({
 });
 // 
 $(function () {
-  $("a[href^='#adv'], a[href^='#response'], a[href^='#prices'], a[href^='#tests']").click(function () {
+  $("a[href^='#advant'], a[href^='#response'], a[href^='#prices'], a[href^='#tests']").click(function () {
     var _href = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(_href).offset().top - 72 + "px"
