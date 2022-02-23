@@ -1,4 +1,3 @@
-// intro
 .intro {
   padding-bottom: 100px;
 
@@ -7,7 +6,6 @@
   background: url("../img/bg/bg-intro-01.webp") no-repeat top;
   background-color: #18273f;
 
-  // @media screen and (max-width:1449px) {
   @media screen and (max-width:1198px) {
     padding-bottom: 30px;
   }
@@ -21,7 +19,6 @@
   padding-top: 222px;
   margin-bottom: 219px;
 
-  // @media screen and (max-width:1449px) {
   @media screen and (max-width:1198px) {
     padding-top: 150px;
     margin-bottom: 15px;
@@ -68,14 +65,12 @@
 
   @media screen and (max-width:575px) {
     left: -92px;
-    // top: 295px;
     top: 402px;
     transform: scale(0.45);
   }
 
   @media screen and (max-width:469px) {
     left: -112px;
-    // top: 350px;
     top: 452px;
   }
 
@@ -89,7 +84,6 @@
   z-index: 5;
   flex-basis: 48%;
 
-  // @media screen and (max-width:1449px) {
   @media screen and (max-width:1198px) {
     flex-basis: auto;
   }
@@ -102,7 +96,6 @@
 
 .intro__btn {
 
-  // @media screen and (max-width:1449px) {
   @media screen and (max-width:1198px) {
     position: absolute;
     bottom: 0;
@@ -117,7 +110,6 @@
     position: relative;
 
     margin-bottom: 30px;
-    // right: 0;
   }
 }
 
@@ -151,7 +143,6 @@
     max-width: 345px;
     width: 100%;
     background-size: contain;
-    // margin-bottom: 85px;
     margin-bottom: 48px;
   }
 
@@ -168,7 +159,6 @@
   }
 
   @media screen and (max-width:575px) {
-    // margin-bottom: 385px;
     margin-bottom: 320px;
     align-self: center;
   }
@@ -176,10 +166,6 @@
 
 .intro__blockquote p {
   width: 250px;
-
-  // @media screen and (max-width:1198px) {
-  //   padding: 0 10px;
-  // }
 
   @media screen and (max-width:992px) {
     font-size: rem(14px);
@@ -249,9 +235,6 @@
   font-weight: 500;
 }
 
-// END intro
-
-// vid
 .vid {
   position: relative;
   padding-bottom: 130px;
@@ -415,8 +398,6 @@
   cursor: pointer;
 }
 
-// END vid
-// advantages
 .advantages {
   padding-top: 94px;
 
@@ -700,8 +681,6 @@
   }
 }
 
-// END advantages 
-// response
 .response {
   position: relative;
   padding: 130px 0 0;
@@ -937,8 +916,6 @@
   margin-right: 0;
 }
 
-// END response
-// prices
 .prices__title {
   padding: 0 220px;
   margin-bottom: 36px;
@@ -1120,8 +1097,6 @@
   }
 }
 
-// END prices 
-// overall
 .overall__list {
   display: flex;
   justify-content: center;
@@ -1174,8 +1149,6 @@
   }
 }
 
-// END overall
-// tests
 .tests {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -1335,8 +1308,6 @@
   width: 310px;
 }
 
-// END tests
-// slogan
 .slogan {
   padding: 120px 0 139px 0;
 
@@ -1377,8 +1348,6 @@
   }
 }
 
-// END slogan
-// social
 .social__list {
   display: flex;
   justify-content: space-between;
@@ -1410,5 +1379,3 @@
     transition: ease-in-out 0.3s;
   }
 }
-
-// END social

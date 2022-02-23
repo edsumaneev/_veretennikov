@@ -31,10 +31,6 @@
 
   border-bottom: 1px solid #caa795;
 
-  // @media screen and (max-width:1449px) {
-  // flex-wrap: wrap;
-  // }
-
   @media(max-width: $width-lg) {
     flex-direction: column;
   }

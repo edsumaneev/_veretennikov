@@ -131,7 +131,6 @@
   }
 }
 
-// 
 .close-btn,
 .close-popup {
   position: absolute;
@@ -210,7 +209,6 @@
   transition: 0.5s all;
 }
 
-// 
 .bg-popup__agreement {
   position: relative;
   display: block;
@@ -263,7 +261,6 @@
   background-size: 90%;
 }
 
-// ------------------------------------------
 .popup-test__radio+label {
   display: inline-flex;
   align-items: center;
@@ -313,7 +310,6 @@
   border-radius: 50%;
 }
 
-// -----------------------------------------------
 .popup-test__quest {
   margin-bottom: 20px;
   color: #000000;
@@ -410,7 +406,6 @@
   flex-wrap: wrap;
 }
 
-// popup-thanks
 .popup-thanks {
   position: relative;
   padding-top: 150px;
@@ -474,9 +469,6 @@
   }
 }
 
-// END popup-thanks
-
-// popup-advice
 .popup-advice {
   padding: 50px 70px 0 70px;
   max-width: 600px;
@@ -545,5 +537,3 @@
 .popup-advice__bnt {
   margin: 0 auto;
 }
-
-// END popup-advice
